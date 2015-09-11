@@ -1,0 +1,116 @@
+html,body{ margin:0; padding: 0; background: black; font-family: 'Comfortaa',sans-serif;}
+
+.red{ background:#C0392B; }
+.purple{ background:#674172; }
+.blue{ background:#446CB3; }
+.green{ background:#00B16A; }
+.orange{ background:#E87E04; }
+.colorgray{ color: #bbb;}
+
+header{
+    background: #222;
+    padding: 80px;
+    text-align: center;
+    color: white;
+}
+
+header p{
+    font-size: 4em;
+    margin: 0;
+}
+
+
+nav ul, .show-menu{ 
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    height: 30px;
+    font-family: 'Comfortaa',sans-serif;
+    background: #333;
+    color:#ddd;
+}
+
+.show-menu{ 
+    width: 100%;   
+    padding: 5px; 
+    height: auto;
+    font-size: 28px;
+    text-align: center; 
+    margin-bottom: 1px;
+    display: none;
+}
+
+.show-menu:hover{ cursor: pointer;}
+
+
+input[type=checkbox]{ display: none;}
+
+
+
+@media screen and (max-width : 760px){
+	
+	#menu{display: none;}
+        
+        .show-menu{ display: block;}
+        
+        header{ padding: 30px;}
+        header i{display: none !important;}
+        header p{font-size: 2.5em;}
+	
+	/*Make all menu links full width*/
+	nav ul li, nav li a {
+		width: 100%;
+                background: #222;
+                height: auto !important;
+	}
+        
+        nav li a{
+            margin-bottom: 1px;
+            font-size: 28px;
+            padding: 5px;
+            text-align: center;
+        }
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ nav>#menu{ display: block;}
+/*and add some padding to header*/
+input[type=checkbox]:checked ~ header{ padding-top: 160px;}
+
+nav ul li{
+    display: inline-block;
+    float: left;
+    margin-right: 1px;
+}
+
+nav ul li a{
+    
+    padding: 5px 10px;
+    height: 20px;
+    display: block;
+    text-decoration: none;
+    color:#ddd;
+}
+
+
+.active, nav ul li a:hover, .show-menu:hover{
+	background: #444;
+}
+
+article h2{ font-weight: 300;}
+
+.width75{ 
+    width: 75%;
+    margin:0 auto;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.fontweightnormal{ font-weight: 600;}
+
+.listmargin li{ margin-bottom: 5px; }
+
+.padd{ background: #eee; padding: 0 5px; font-weight: 600;
+      border-radius: 5px; color: #222; text-decoration: none;}
+.padd:hover{ background: #333;}

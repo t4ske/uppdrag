@@ -1,0 +1,80 @@
+
+
+body {
+  background:#3d2729;
+  background:url(../img/coffeebackgroundlolo.jpg) repeat-y;
+  background-size: 100%;
+  font-family:Trebuchet MS;
+}
+.header {
+  background:url(../img/header.png) repeat-y;
+  width:573px;
+  height:49px;
+
+} 
+.footer {
+  background:url(../img/footer.png) no-repeat;
+  width:573px;
+  height:49px;
+} 
+.content {
+  background:url(../img/content.png) repeat-y;
+  width:573px;
+}
+
+h4{
+  margin: 0;
+  padding: 20px;
+}
+
+p {
+  margin:0px 40px;
+  padding-bottom:20px;
+  line-height:1.5em;
+}
+
+table{ padding: 0 40px;}
+
+.dist li{ margin-top: 5px;}
+
+.main{ max-width: 1200px;
+       min-height: 100px;
+        width: 90%;
+        margin: 0 auto;
+      }
+
+.article{ 
+  float: left; 
+}
+.article:first-of-type{ margin-right: 50px;}
+
+h1{ text-align: center;
+color: #FEFEFC;
+font-size: 60px;
+margin: 50px 0;
+text-shadow: 2px 2px 4px #000;
+}
+
+h1 span{ color: #FBDA85;}
+
+
+/* ---------------------- simple responsive css --------------- */
+@media screen and (max-width: 1361px) {
+    
+    h1{ min-height: 100px; padding: 50px; margin: 0;  background:url('../img/coffeebackgroundlolo.jpg'); }
+
+    body{ margin: 0; padding: 0; background: #9D7441}
+
+    .main{ width: 100%; max-width: none; margin: 0; padding: 0; overflow: hidden;}
+
+    body, .header, .footer, .content {background-image: none;}
+
+    .header{display: none;}
+    .footer{height: 10px;}
+
+    .article { width: 100%;}
+
+    .content{ width: 100%; background: white; padding-bottom: 50px; padding-right: 30px; border-top: 1px solid #1B1517; border-bottom: 1px solid #1B1517; overflow: hidden;}
+
+}
+

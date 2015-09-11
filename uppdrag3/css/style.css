@@ -1,0 +1,64 @@
+header{
+	background: url("../img/la.jpg");
+	background-size: 100%;
+	background-position: 0 -60px; 
+	padding: 9.2vw 0;
+}
+
+
+
+body{ 
+	margin: 0; padding: 0;
+	text-align: center;
+	font-size: 2em;
+	color: #6B536D;
+	font-family: 'Lato', sans-serif;
+	background: #493C4A;
+}
+
+a{ 	color: #6B536D;
+	text-decoration: none;
+	border-radius: 10px;
+	border: 4px solid #6B536D;
+	padding: 15px 20px;
+	margin: 30px;
+}
+
+a:hover{ background: #777; color: white;}
+a:active{ background: #999; color: white;}
+
+footer{
+	color: #C8BED1;
+	font-size: 0.8em;
+	padding-top: 80px;
+	width: 100%; 
+}
+
+footer div{ padding: 30px;}
+
+footer a{ color: white; border-color: #eee; padding: 10px 15px;}
+footer a:hover{ background: #f9f9f9; color:  #493C4A;}
+footer a:active{ background: #eee; color:  #493C4A;}
+
+article{ padding: 100px 0;
+	background: white;
+	position: relative;
+}
+
+article img{
+	position: absolute;
+	top:10px;
+	right: 10px;
+	width: 15%;
+	 -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(7deg);
+}
+
+.yellow{color: #C8BED1;}
+
+#readylink{
+	background: none;
+	border: none;
+}
+
