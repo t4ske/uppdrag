@@ -1,0 +1,13 @@
+/* 
+    Created on : 2015-jan-24, 21:44:01
+    Author     : urbvik
+*/
+
+@import url("user/city-light.css"); /* Import all styles from this file */
+ 
+/* add debug-information to some central elements
+--------------------------------------------------------
+*/
+body {background: beige;}
+*{ border: 2px dotted red}
+

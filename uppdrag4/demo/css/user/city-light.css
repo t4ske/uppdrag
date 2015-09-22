@@ -1,0 +1,83 @@
+/* 
+    Some simple styling for me-page
+
+    Created on : 2015-jan-22, 14:21:31
+    Author     : urbvik
+*/
+
+/*include the header and footer stylesheets*/
+@import url("../incl/footer.css");
+@import url("../incl/header.css");
+@import url("../incl/gallery.css");
+@import url("../incl/byline.css");
+
+/* html5 elements ---------------------------------------------- */
+header,footer,nav,article,section,aside{/* display:block; */}
+
+
+/* page reset */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+h1{/* margin: 90px 0; */}
+
+html,body{
+    
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html { overflow-y: scroll; }
+
+.login{
+    float:right;
+}
+
+
+/* some color classes */
+.lightgray{ color: #f5f5f5;}
+.orangeyellow{ color: #ffc200;}
+.yellow{ color: gold;}
+.darkgray{ background: #222; }
+.darkbluegray{ color: #0f2034; }
+
+
+/* some lines */
+.line{ background: #222; color: #eee; 
+      padding: 5px; font-size: 10px; text-align: right;
+      font-weight: 300;}
+
+.line a{
+    text-decoration: none;
+    color: #6f87ad;
+}
+
+.article-left-img{
+    padding: 50px 20px;
+    min-height: 450px;
+}
+
+.article-left-img img{  
+    float:left;
+    margin: 20px 50px 20px 0;
+}
+
+
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+
+

@@ -1,0 +1,136 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2015-mar-02, 10:13:25
+    Author     : urbvik
+*/
+
+/* page reset */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,body{
+    
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    height: 100%;
+}
+
+html { overflow-y: scroll; }
+
+.navmenu{
+    padding: 10px 0;
+}
+
+
+#top img{
+    display: none;
+}
+
+nav.login{
+    float: right;
+}
+
+.main-banner h1{
+    text-align: center;
+    font-size: 50px
+}
+
+.main-banner{
+     border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc; 
+    margin: 10px 0;
+}
+
+.image-gallery {
+  text-align:center;
+  margin:0 auto;
+  padding: 30px;
+  border-bottom: 1px solid #ccc;
+}
+
+.image-gallery figure {
+  display: inline-block;
+  position: relative;
+  width:300px;
+  margin-right: 2px;
+  margin-bottom:  0px;
+  height: 180px;
+}
+
+.image-gallery figure figcaption {
+    font-size: 10px;
+}
+
+#content aside{
+    height: auto !important;
+    padding-left: 0 !important;
+    padding-right: 15px !important;
+}
+
+#content{
+    border-top: 1px solid #ccc;
+}
+
+#content aside a, #content aside h2{
+    background: none !important;
+    color: #333 !important;
+    border: none !important;
+    padding: 0 20px !important;
+}
+
+#content aside a{
+    color: blue !important;
+    text-decoration: underline !important;
+}
+
+#content section{
+    background: none !important;
+    margin-top: 20px !important;
+    border: none !important;
+}
+
+.byline {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 5px;
+    
+}
+
+.line {
+    font-size: 12px;
+}
+
+.byline p {
+    float: right;
+    width: 1000px;
+    font-size: 12px;
+}
+
+.byline figure {
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.top {
+    vertical-align: top;
+}
+.right {
+    float: right;
+}
+
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}

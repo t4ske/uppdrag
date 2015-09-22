@@ -1,0 +1,24 @@
+
+/* 
+    Created on : 2015-jan-22, 14:31:14
+    Author     : urbvik
+*/
+
+#footer{ 
+    background: #eee; 
+    padding: 10px 150px;
+    color:#bbb; 
+    border-top: 1px dotted #ccc;
+    border-bottom: 1px dotted #ccc;
+    /* text-align: center; */
+}
+#footer a{
+   color:darkslategray; 
+   font-weight: 500; 
+   text-decoration:none;
+}
+
+#footer a:active{
+   text-decoration:underline;
+}
+

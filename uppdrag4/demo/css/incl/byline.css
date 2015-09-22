@@ -1,0 +1,31 @@
+
+/* 
+    Created on : 2015-jan-26, 16:06:47
+    Author     : urbvik
+*/
+
+.byline{
+    margin: 10px 0;
+    padding:5px;
+    border-top: 1px dotted #bbb;
+    font-size: 12px;    
+}
+
+.byline p{
+    float:right;
+    width: 1000px;
+}
+
+.byline figure{
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.right{
+    float:right;
+}
+
+.top{
+    vertical-align: top;
+}
+

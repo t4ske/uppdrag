@@ -1,0 +1,58 @@
+.image-gallery {
+  text-align:center;
+  margin:0 auto;
+  background: #112233;
+   padding: 30px;
+}
+
+.gallery-header{
+    text-align: left;
+    font-size: 12px;
+    padding: 4px;
+    font-style: normal;
+}
+
+#gallery-bottom{
+    padding: 15px;
+}
+
+
+
+.image-gallery figure {
+  display: inline-block;
+  border:1px solid #222;
+  position: relative;
+  overflow:hidden;
+  width:300px;
+  margin-right: 2px;
+  margin-bottom:  0px;
+  height: 180px;
+}
+
+
+figure:hover:before {
+  content: '';
+  background: rgba(0,0,0,0.25);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+figcaption {
+  position: absolute;
+  padding-top: 10px;
+  height:50px;
+  width:100%;
+  background-color: #222;
+  color: #eee;
+  bottom:-50px;
+  transition: bottom 0.5s ease;
+  font-size: 12px;
+}
+
+figure:hover figcaption {
+  bottom:0;
+}
+

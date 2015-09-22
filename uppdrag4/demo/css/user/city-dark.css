@@ -1,0 +1,112 @@
+/* 
+    Some simple styling for me-page
+
+    Created on : 2015-jan-22, 14:21:31
+    Author     : urbvik
+*/
+
+/*include the header and footer stylesheets*/
+@import url("../incl/footer.css");
+@import url("../incl/header.css");
+@import url("../incl/gallery.css");
+@import url("../incl/byline.css");
+
+/* html5 elements ---------------------------------------------- */
+header,footer,nav,article,section,aside{/* display:block; */}
+
+
+/* page reset */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+h1{/* margin: 90px 0; */}
+
+html,body{
+    
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #111;
+    color: #bbb;
+    
+}
+hr{ display:none;}
+#above{ padding: 5px 10px; color: #ffc200; background: #222;}
+#above a{ color: #eee;}
+.navmenu{ background: rgb(57, 63, 71);}
+.navmenu a{ color: #ccc;}
+.active-page{ background: #ffc200 !important; color: #222 !important; }
+.navmenu .active-page:after { border-bottom-color: #ffc200; }
+.line{ background: #222 !important;  color: #909090 !important;}
+.image-gallery{ background: #1d1d1d;}
+.byline{ background: #282828; border: 0; margin:0; color: #909090;}
+#footer{ background: #0a0a0a !important; border: none !important; }
+code a{ color: #ddd !important; }
+
+#content h2, #content header h1{ color: #ffc200 !important;}
+#content section{ background: #191919 !important; border-color: #333 !important;}
+#content section h1{ color: #ffc200;}
+#content section p{ color: #666;}
+#content aside h2{
+    background: #333 !important; 
+    border-color: #555 !important;
+    color: #aaa !important;}
+#content h3{ color: rgb(213, 191, 119);}
+#content aside a{
+    background: #191919 !important;
+    border-color: #333 !important;
+    color: #666 !important;
+}
+
+#content aside a:hover{ background: #1c1c1c !important;}
+#content aside a:active{ background: #1f1f1f !important;}
+
+
+/* some color classes */
+.lightgray{ color: #ddd;}
+.orangeyellow{ color: #ffc200;}
+.yellow{ color: gold;}
+.darkgray{ background: #ffc200; }
+.darkbluegray{ color: #ffc200; }
+
+html { overflow-y: scroll; }
+.login{ float:right;}
+
+/* some lines */
+.line{ background: #222; color: #eee; 
+      padding: 5px; font-size: 10px; text-align: right;
+      font-weight: 300;}
+
+.line a{
+    text-decoration: none;
+    color: #6f87ad;
+}
+
+.article-left-img{
+    padding: 50px 20px;
+    min-height: 450px;
+}
+
+.article-left-img img{  
+    float:left;
+    margin: 20px 50px 20px 0;
+}
+
+
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+
+

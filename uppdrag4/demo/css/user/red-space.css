@@ -1,0 +1,185 @@
+/* 
+    Some simple styling for me-page
+
+    Created on : 2015-jan-22, 14:21:31
+    Author     : urbvik
+*/
+
+/*include the header and footer stylesheets*/
+@import url("../incl/footer.css");
+@import url("../incl/header.css");
+@import url("../incl/gallery.css");
+@import url("../incl/byline.css");
+
+/* html5 elements ---------------------------------------------- */
+header,footer,nav,article,section,aside{/* display:block; */}
+
+
+/* page reset */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.main-banner{
+    background: url('../../img/space.jpg') !important;
+}
+
+h1{/* margin: 90px 0; */}
+
+html,body{
+    
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html { overflow-y: scroll; }
+
+.login{
+    float:right;
+}
+
+
+/* some color classes */
+.lightgray{ color: #f5f5f5;}
+.orangeyellow{ color: #ffc200;}
+.yellow{ color: gold;}
+.darkgray{ background: #222; }
+
+
+
+/* some lines */
+.line{ background:  #2D0B09; color: #eee; 
+      padding: 5px; font-size: 10px; text-align: right;
+      font-weight: 300;}
+#above{
+    background:  #080300;
+    padding: 5px 10px;
+    color: rgb(255, 194, 0);
+}
+#above a{
+    color: #eee;  
+}
+#top img{   -webkit-filter: sepia(1); filter: sepia(1);}
+.navmenu{ background:  #EE6B01; }
+.navmenu a{ color: black !important;}
+.navmenu .active-page { 
+    color: #eee !important; 
+    background: #662D02 !important;
+}
+.darkbluegray{ color: #EE6B01 !important;}
+.orangeyellow{ color: #EE6B01 !important;}
+
+body{
+    background: #1D0E07;
+}
+.byline{ background: #080300 !important;
+         color: rgb(152, 135, 105) !important;
+margin-bottom: 0 !important;
+border: none !important;}
+#footer{
+    color: #eee !important; 
+    background: #080300 !important;
+    border: none !important;
+}
+
+div.line{ display: none;}
+hr{ display: none;}
+
+#footer a{ color: #aaa !important;}
+
+code a{ color: rgb(230, 183, 93)}
+
+.navmenu .active-page:after {border-bottom-color: #662D02 !important;}
+
+.line a{
+    text-decoration: none;
+    color: #6f87ad;
+}
+
+.article-left-img{
+    padding: 50px 20px;
+    min-height: 450px;
+    color: rgb(243, 250, 219) !important;
+}
+
+.image-gallery{
+    background: #080300 !important;
+}
+
+.article-left-img img{  
+    float:left;
+    margin: 20px 50px 20px 0;
+}
+
+#content h1, #content h2{
+    color: #EE6B01 !important;
+}
+
+#content p strong{
+    color: #821B1C !important;
+}
+
+#content h3{
+    color: rgb(230, 183, 93);
+}
+
+#content img, figure img{
+    -webkit-filter:sepia(1);
+    filter: sepia(1);
+}
+
+#ex1{
+   -webkit-box-shadow: 4px 5px 20px 0px rgb(140, 112, 58) !important;
+    box-shadow: 4px 5px 20px 0px rgb(140, 112, 58) !important;
+    -webkit-filter: sepia(0.8);
+    filter: sepia(0.8);
+}
+
+#ex1 h3, #ex2b h3{  color: rgb(27, 26, 25) !important;}
+
+#ex2b{
+     -webkit-filter: sepia(1);
+  filter: sepia(1);
+}
+
+#ex3{ background: #1F0800 !important; border-color: rgb(44, 29, 0) !important;}
+#ex3 p{ color: rgb(230, 183, 93);}
+
+#content section {
+background: #100404 !important;
+border: 1px solid #422307!important;
+border-radius: 3px !important;
+color: rgb(243, 250, 219) !important;
+}
+
+#content aside h2{
+    border: 1px solid #422307!important;
+    background:  #662D02 !important;
+}
+
+#content aside a{
+   background: #100404 !important;
+border: 1px solid #422307!important;
+border-radius: 3px !important;
+color: rgb(243, 250, 219) !important; 
+}
+
+#content aside a:hover{ background: #683210 !important; }
+
+
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+
+

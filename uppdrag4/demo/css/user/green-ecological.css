@@ -1,0 +1,172 @@
+/* 
+    Some simple styling for me-page
+
+    Created on : 2015-jan-22, 14:21:31
+    Author     : urbvik
+*/
+
+/*include the header and footer stylesheets*/
+@import url("../incl/footer.css");
+@import url("../incl/header.css");
+@import url("../incl/gallery.css");
+@import url("../incl/byline.css");
+
+/* html5 elements ---------------------------------------------- */
+header,footer,nav,article,section,aside{/* display:block; */}
+
+
+/* page reset */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.main-banner{
+    background: url('../../img/banner.jpg') !important;
+}
+
+h1{/* margin: 90px 0; */}
+
+html,body{
+    
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: rgb(238, 255, 157);
+}
+hr{ display: none;}
+
+body{background: rgb(138, 186, 0) !important;
+     margin: 0 auto;
+    max-width: 1200px;
+    height: 100%;
+    border-left: 1px solid #222;
+    border-right: 1px solid #222;
+    box-shadow: 0px 0px 10px 10px #222;
+   -webkit-box-shadow: 0px 0px 10px 10px #222;
+}
+
+html { overflow-y: scroll; 
+background: #333;}
+
+.login{
+    float:right;
+}
+
+
+/* some color classes */
+.lightgray{ color: #f5f5f5;}
+.orangeyellow{ color: #ffc200;}
+.yellow{ color: gold;}
+.darkgray{ background: #222; }
+.darkbluegray{ color: #0f2034; }
+
+
+/* some lines */
+.line{ background:  #574629; color: #eee; 
+      padding: 5px; font-size: 10px; text-align: right;
+      font-weight: 300;}
+#above{
+    background:   #5A3F12;
+    padding: 5px 10px 0 10px;
+    color: rgb(238, 145, 1);
+}
+#above a{
+    color: #eee;  
+}
+#top img{   -webkit-filter: brightness(0.8) sepia(1); 
+       filter: brightness(0.8) sepia(1); }
+#content article img,  figure img{-webkit-filter: brightness(1.1) sepia(1); 
+    filter: brightness(1.1) sepia(1);}
+.navmenu{ background:  #D2E86C;}
+
+
+.navmenu .active-page { 
+    color: #eee !important; 
+    background: #EE6B01 !important;
+}
+.navmenu .active-page:after {border-bottom-color: #EE6B01 !important;}
+
+.orangeyellow{
+    color: #EE6B01 !important;
+}
+
+body{
+    background: #F9FFF3;
+}
+
+.byline{
+    background: rgb(69, 61, 48);
+    margin: 0;
+    border-top: 0;
+    color: #CABCA6;
+}
+
+.image-gallery{background: #B3A183;}
+
+#footer{
+    color: #eee !important; 
+    background: #453D30 !important;
+    border: 0;
+}
+
+#footer a{ color: #aaa !important;}
+
+
+
+.line a{
+    text-decoration: none;
+    color: #6f87ad;
+}
+
+.line:nth-of-type(3){ padding-bottom: 15px;}
+
+.article-left-img{
+    padding: 50px 20px;
+    min-height: 450px;
+}
+
+.article-left-img img{  
+    float:left;
+    margin: 20px 50px 20px 0;
+}
+
+#content h3{ color: #F0FFA8;}
+#content h2, #content h1{ color: rgb(110, 69, 0) !important;}
+
+#content section, #content aside a{
+    background: #D2E86C !important;
+    border: 1px solid #B29E7C !important;
+    border-radius: 5px !important;
+    color: #222 !important;
+}
+
+#content aside a:hover{background: #DEF575 !important;}
+#content aside a:active{background: #F0FFA8 !important;}
+
+#content aside h2{ 
+    background: rgb(87, 70, 41) !important; 
+    color: #FBFFC5 !important;
+    border: 1px solid #715C39 !important;
+    border-radius: 5px !important;
+}
+
+#ex2a{ border-color: rgb(171, 123, 45) !important;}
+#ex2b{ border-color: rgb(171, 123, 45) !important; background: #D4BD93 !important;}
+#ex3 h3{ color: rgb(52, 37, 18);}
+
+code a{ color:#E2FC68;}
+
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+
+

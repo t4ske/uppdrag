@@ -1,0 +1,84 @@
+
+/* 
+    Some simple styling for logo-image and nav-menu
+
+    Created on : 2015-jan-22, 14:21:31
+    Author     : urbvik
+*/
+
+/* the logo-image position */
+#top{ position: absolute;}
+
+#top img{
+    width: 4vw;
+    margin: 2vw;
+}
+
+#top img:hover{ cursor: crosshair;}
+
+
+/* the banner section of the header */
+.main-banner{
+    background: url('../../img/urban-landscape.jpg');
+    background-repeat: no-repeat;
+    background-size: 120%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 4vw;
+    letter-spacing: -0.5vw;
+    color: white;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* styling for nav-menu */
+.navmenu{ 
+    background: #eee; 
+    color:#bbb; 
+    text-align: center;
+    color:darkslategray; 
+    font-weight: 500; 
+    text-decoration:none;
+}
+
+.navmenu a{
+    float: left;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #222;
+}
+
+.navmenu a:hover{
+    text-decoration: underline;
+}
+
+.navmenu a:active{ color: #ffc200; }
+
+/* some distinct but ugly styling used wile debugging 
+.navmenu .active-page{
+    background: greenyellow !important;
+}*/
+
+.navmenu .active-page{
+   position: relative;
+   background: #eee;
+ }
+ 
+.navmenu .active-page:after 
+ {
+   bottom: 100%;
+   left: 50%;
+   border: solid transparent;
+   content: " ";
+   height: 0;
+   width: 0;
+   position: absolute;
+   border-color: rgba(238, 238, 238, 0);
+   border-bottom-color: #eee;
+   border-width: 15px;
+   margin-left: -15px;   
+}
+
