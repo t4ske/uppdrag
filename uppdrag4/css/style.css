@@ -21,3 +21,39 @@ article img{ width: 800px; display: block; margin: 0 auto;}
 .orange{ color: #F06529;}
 .darkorange{ color: #E34C26;}
 
+.tip{
+	padding: 0;
+	border: 1px solid #777;
+	background: #eee;
+	margin-bottom: 10px;
+	border-radius: 5px; 
+}
+.tip h4{margin-top: 5px; color: #F06529; background: #333; margin: 0; padding: 3px;  }
+.tip p{ padding: 0 5px; }
+
+.bash .de1,.bash .de2{font:normal normal 1em/1.2em monospace;margin:0;padding:0;background:none;vertical-align:top;}
+ .bash{font-family:monospace; background: #eee; padding: 10px; }
+ .bash .imp{font-weight:bold;color:red;}.bash li,.bash .li1{font-weight:normal;vertical-align:top;}.bash 
+ .ln{width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}.bash .li2{font-weight:bold;vertical-align:top;}
+ .bash .kw1{color:#000;font-weight:bold;}.bash .kw2{color:black;font-weight:bolder;}.bash .kw3{color:#7a0874;font-weight:bold;}
+ .bash .co0{color:#666;font-style:italic;}.bash .co1{color:#800000;}.bash .co2{color:#c00;font-style:italic;}
+ .bash .co3{color:#000;font-weight:bold;}.bash .co4{color:#666;}.bash .es1{color:#009;font-weight:bold;}
+ .bash .es2{color:#007800;}.bash .es3{color:#007800;}.bash .es4{color:#007800;}.bash .es5{color:#780078;}
+ .bash .es_h{color:#009;font-weight:bold;}.bash .br0{color:#7a0874;font-weight:bold;}.bash .sy0{color:#000;font-weight:bold;}
+ .bash .st0{color:#f00;}.bash .st_h{color:#f00;}.bash .nu0{color:#000;}.bash .re0{color:#007800;}.bash .re1{color:#007800;}
+ .bash .re2{color:#007800;}.bash .re4{color:#007800;}.bash .re5{color:#603;}.bash .ln-xtra,.bash li.ln-xtra,
+ .bash div.ln-xtra{background-color:#ffc;}.bash span.xtra{display:block;}.bash .sc2{color:#333; font-weight: bold;}
+.bash a{text-decoration: none;}
+
+
+ .sql.geshi .de1,.sql.geshi .de2{font:normal normal 1em/1.2em monospace;margin:0;padding:0;background:none;vertical-align:top;}
+ .sql.geshi{font-family:monospace;}.sql.geshi .imp{font-weight:bold;color:red;}
+ .sql.geshi li,.sql.geshi .li1{font-weight:normal;vertical-align:top;}
+ .sql.geshi .ln{width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+ .sql.geshi .li2{font-weight:bold;vertical-align:top;}.sql.geshi .kw1{color:#933;font-weight:bold;}
+ .sql.geshi .co1{color:#808080;font-style:italic;}.sql.geshi .coMULTI{color:#808080;font-style:italic;}
+ .sql.geshi .es0{color:#009;font-weight:bold;}.sql.geshi .br0{color:#6c6;}
+ .sql.geshi .sy0{color:#6c6;}.sql.geshi .st0{color:#f00;}.sql.geshi .nu0{color:#c6c;}
+ .sql.geshi .ln-xtra,.sql.geshi li.ln-xtra,.sql.geshi div.ln-xtra{background-color:#ffc;}
+ .sql.geshi span.xtra{display:block;}
+
