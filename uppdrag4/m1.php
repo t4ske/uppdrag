@@ -533,7 +533,7 @@ http://php.net/manual/en/function.include.php
 	<li><s>CSS och validator (me.php, stylesheet.css)</s></li>
 	<li><s>Header med logo och meny</s></li>
 	<li><s>PHP (header.php, footer.php)</s></li>
-	<li>En sida för att beskriva vad du gjort i varje moment (report.php)</li>
+	<li><strong>En sida för att beskriva vad du gjort i varje moment (report.php)</strong></li>
 	<li>Snygga till och gör färdigt</li>
 </ol>
 
@@ -553,16 +553,19 @@ tid med det bara, vi behöver komma framåt hela tiden).
 <p>Det blev bra va? Strukturen av källkoden till me-sidan och till redovisningssidan är densamma. 
 Dubbelkolla genom att titta på källkoden.
 
+
 <p>Du glömmer inte att validera sidorna va? Bra, men det finns ett litet bekymmer. 
 Titeln på sidorna är samma. Den titel som visas överst i webbläsarens fönster, 
-den titel som finns i HTML-elementet <title> i header.php. Det är inte bra. 
+den titel som finns i HTML-elementet &lt;title&gt; i header.php. Det är inte bra. 
 Låt se om det går att hantera med PHP.
+
+
 
 <h3>8.2 Variabel i PHP för att byta titel</h3>
 
 <p>[UPPGIFT]
 
-<p>Varje sida skall ha en egen beskrivande titel. Själva titeln sätts i HTML-elementet <title> i 
+<p>Varje sida skall ha en egen beskrivande titel. Själva titeln sätts i HTML-elementet &lt;title&gt; i 
 header.php. Men, det är ju me-sidan eller redovisningssidan som vet vilken titel det skall vara. 
 Detta kan vi lösa med en variabel i PHP. Vi skapar en PHP-variabel $title som skall innehålla 
 sidans titel. Vi ger variabeln ett värde i me.php respektive report.php. 
@@ -591,7 +594,160 @@ http://php.net/manual/en/language.variables.basics.php</a>
 <a href="http://php.net/manual/en/function.echo.php">http://php.net/manual/en/function.echo.php</a>
 </div>
 
+<h2>8.3 Felmeddelande i PHP</h2>
 
+<p>[UPPGIFT]
+
+<p>När webbservern processar PHP-koden kan den hitta fel och då skrivs ett felmeddelande ut. 
+Felmeddelande i PHP kan vara av olika typer och ha olika grad av allvarlighet. Beroende på om det är 
+en utvecklingsserver eller en driftsserver så brukar man konfigurera PHP att visa olika meddelanden. 
+På driftsservern visas troligen inte felmeddelande av typen NOTICE. Det är rätt vanligt att det är 
+så på en driftsserver. Det är alltid bra att ha kontroll över vilka felmeddelanden som skrivs ut. 
+Och framförallt att de verkligen skrivs ut.
+
+<p>Följande bilder visar på två vanliga felmeddelanden. 
+Kan du klura ut vad de beror på? 
+I sista exemplet kan det vara lite svårt att se felmeddelandet. 
+I de fallen kan det vara bra att studera den HTML-kod som genererats.
+
+<p>Svaren står i slutet av detta stycke.
+
+<h4>Fel nummer 1:</h4>
+<p><img src="img/fail1.jpg" alt="ett vanligt fel i php-kod">
+<h4>Fel nummer 2:</h4>
+<p><img src="img/fail2.jpg" alt="ett annat vanligt fel i php-kod">
+
+<p>Hittade du felen? 
+
+<p>Det första felet beror på att vi försöker inkludera en fil som inte finns.
+
+<p>Det andra felet beror på ett felaktigt variabelnamn. Någon försöker skriva ut variabeln $title.
+- men den variabel har någon glömt att deklarera och ge ett värde.
+
+<p>Det kommer att bli fler felmeddelanden innan dina studier är slut, tro mig.
+
+<h2>8.4 Ta kontroll över felmeddelanden</h2>
+
+<p>[UPPGIFT]
+
+<p>Med PHP-funktionen error_reporting() går att ställa in vilka felmeddelanden som visas, 
+oavsett hur PHP är konfigurerat på servern. Ett bra sätt är att lägga anropet i en egen fil, 
+det blir då enkelt att ändra.
+
+För detta syfte skapar vi en ny fil, incl/config.php. Följande PHP-kod stoppar vi in i filen.
+
+<div class="tip"><h4>&nbsp; Kod:</h4>
+<pre class="php geshi">
+	error_reporting(E_ALL);
+	ini_set('display_errors', true);
+</pre>
+</div>
+
+<p>Nu behöver du inkludera denna fil i me-sidan respektive redovisningssidan. 
+Lägg denna include-sats längst upp i filen.
+
+<p>Bra, ordning och reda. Felmeddelanden kommer vi ha stor nytta av framöver. 
+Det är ett av de viktigaste verktygen för felsökning.
+
+<p>Vi börjar närma oss slutet för detta kursmoment.
+
+
+<div class="tip">
+<h4>Tips 1:</h4>
+<p>Vill du veta mer om funktionen error_reporting() så läser du om den i referensmanualen. 
+Gör det till en vana att slå upp saker i referensmanualen.
+
+<a href="http://php.net/manual/en/function.error-reporting.php">
+http://php.net/manual/en/function.error-reporting.php</a>
+</div>
+
+<div class="tip">
+<h4>Tips 2:</h4>
+<p>PHP sluttag ?&gt; behövs inte alltid anges. Som du kan se i filen config.php så använder jag inte 
+sluttaggen. Detta gäller när man enbart har PHP-kod i en fil och det stämmer för config-filen. 
+Om man kan undvika att ange sluttaggen så ska man göra det. När du mixar HTML-kod och PHP-kod så 
+måste du alltid ange sluttaggen. I denna kurs mixar vi nästa uteslutande HTML och PHP så oftast 
+behöver du ange sluttaggen.
+</div>
+
+<h2>9. Snygga till och gör färdigt</h2>
+
+<p>Bra, då stryker vi ytterligare en punkt på listan och tar tag i den sista punkten på listan.
+
+<ol>
+	<li><s>HTML och validator (me.php)</s></li>
+	<li><s>CSS och validator (me.php, stylesheet.css)</s></li>
+	<li><s>Header med logo och meny</s></li>
+	<li><s>PHP (header.php, footer.php)</s></li>
+	<li><s>En sida för att beskriva vad du gjort i varje moment (report.php)</s></li>
+	<li><strong>Snygga till och gör färdigt</strong></li>
+</ol>
+
+
+<h3>9.1 Gör klart me-sidan</h3>
+
+<p>[UPPGIFT]
+
+<p>Nu återstår bara att göra klart din me-site och stoppa in lite information. 
+Skriv eller kopiera in en enklare presentationstext om dig själv ca 15 meningar. 
+
+<h3>9.2 Gör klart redovisningssidan</h3>
+
+<p>[UPPGIFT]
+
+<p>Redovisningssidan skriver du senare. Det är det sista du gör i varje kursmoment.
+
+
+<h3>9.3 Länka till source.php</h3>
+
+<p>[UPPGIFT]
+
+<p>Till detta momentet har jag använt PHP-filen source.php för att visa källkodsexemplen. 
+För att det skall vara enkelt att hjälpa till med felsökning så är det viktigt att du har en kopia 
+av source.php i din katalog. Behöver du hjälp så kommer den som hjälper dig att vilja titta på 
+din källkod.
+
+<p>Du kan hämta koden till <a href="demo/php/source.txt">source.php via följande länk</a>. 
+
+<p>Ta koden och lägg den i en fil som du döper till source.php. 
+Lägg source.php i samma katalog som du lägger me.php och report.php. 
+Se till att länka till source.php i din footer. 
+Som du kan se så har jag gjort det i min variant av me-sidan (Källkod).
+
+<h2>10. Avslutningsvis</h2>
+
+<p>Det är alltid skönt att stryka den sista punkten på listan.
+
+<ol>
+	<li><s>HTML och validator (me.php)</s></li>
+	<li><s>CSS och validator (me.php, stylesheet.css)</s></li>
+	<li><s>Header med logo och meny</s></li>
+	<li><s>PHP (header.php, footer.php)</s></li>
+	<li><s>En sida för att beskriva vad du gjort i varje moment (report.php)</s></li>
+	<li><s>Snygga till och gör färdigt</s></li>
+</ol>
+
+<p>Hoppas att detta gav dig lite mersmak för dessa tekniker och hur de kan samverka när vi bygger 
+webbplatser. I kommande kursmoment får vi mer tid att gå igenom teknikerna lite mer grundligt. 
+I kursen kommer du ha en hel del nytta av kurslitteraturen. Många av svaren på dina frågor finner du där.
+
+<p>Fixa nu till din redovisningssida enligt instruktionen nedan och ladda upp din me-sida till 
+driftsmiljön.
+
+<h3>10.1 Gör klart redovisningssidan</h3>
+
+<p>[UPPGIFT]
+
+<p>Skriv redovisningen på din me-sida. Skriv ett stycke (ca 15 meningar) om hur momentet funkade. 
+Reflektera över dina svårigheter/problem/lösningar/resultatet, etc.  Vilken/vilka webbläsare du normalt 
+använder. Berätta även vilken utvecklingsmiljö du använder (editor, sftp-klient, etc).
+
+<p>&nbsp;</p> 
+<p>&nbsp;</p> 
+<p>&nbsp;</p> 
+<p>&nbsp;</p> 
+<p>&nbsp;</p> 
+<p>&nbsp;</p> 
 
 
 </article>	
