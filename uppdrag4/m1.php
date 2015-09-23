@@ -10,7 +10,7 @@ själv tillsammans med redovisningstexter för momenten.Vi bygger webbplatsen ti
 <p>Resultatet av hela momentet ska laddas upp till din portfolio. 
 Det kan komma att se ut som följande bild visar (bilden är länkad):</p>
 <a target="_blank" href="demo/me.php">
-<img alt="bild som visar min lösning av uppdraget" src="img/demo.jpg" width="850">
+<img alt="bild som visar min lösning av uppdraget" src="img/demo.jpg" >
 </a>
 
 <p>När vi är klara med dagens övning så har du förhoppningsvis fått lite blodad tand på det som 
@@ -87,8 +87,7 @@ Det är ingredienserna till detta avsnitt.
 <p><strong>Då kör vi!</strong>
 
 <p>Läs hela detta dokument, uppifrån och ned. Gör det som det beskrivs, stycke för stycke. Så är tanken. 
-vissa saker skall du själv koda, dessa benämns som [UPPGIFT]. Vissa uppgifter är valbara, 
-då står det [UPPGIFT VALBAR].	
+vissa saker skall du själv koda, dessa benämns som <span class="orange" style="font-weight:bold;">[UPPGIFT]</span>. 	
 
 <h2>2. Utvecklings- och driftmiljö</h2>
 
@@ -97,9 +96,9 @@ då står det [UPPGIFT VALBAR].
  när vi är klara så laddar vi upp en kopia till en driftsmiljö (t4.skelamp.se). 
  Det är ett vanligt sätt (ett av flera) att jobba med webbplatser.
 
-[UPPGIFT]
+<span class="uppg">[UPPGIFT]</span>
 
-Om du du inte redan har gjort det: installera en egen lokal utvecklingsmiljö på din maskin.
+<p>Om du du inte redan har gjort det: installera en egen lokal utvecklingsmiljö på din maskin.
 Steg för detta finns nedan: 
 
 <ol>
@@ -155,7 +154,7 @@ korrekt skriven. Vi vill snygga till webbplatsen med en logo och en navigeringsm
 
 <h3>4.1 Grundstruktur med HTML</h3>
 
-<p>[UPPGIFT]
+<p><span class="uppg">[UPPGIFT]</span>
 
 <p>För att underlätta så startar vi med en grundstruktur för HTML-koden. 
 Grundstrukturen baseras på HTML5 och vi håller den så enkel det går. Iallafall tills vidare.
@@ -206,7 +205,7 @@ Allt för att hålla en bra nivå.
 
 <h3>4.2 Validera enligt HTML5</h3>
 
-<p>[UPPGIFT]
+<p><span class="uppg">[UPPGIFT]</span>
 
 <p>För att kontrollera att det verkligen är HTML5 så kör vi den genom W3C’s HTML validator. 
 Du når validatorn via följande länk.
@@ -224,7 +223,7 @@ Läs vad varningarna/felen betyder så får du ledtrådar till vad du behöver r
 
 <h3>4.3 Länka till valideringsverktyget</h3>
 
-<p>[UPPGIFT]
+<p><span class="uppg">[UPPGIFT]</span>
 
 <p>För att förenkla framtida kontroller så lägger vi till en länk till validatorn, direkt i me-sidan. 
 Det gör att vi hela tiden kan validera dokumentet med ett litet klick.
@@ -263,7 +262,7 @@ Kolla alltid med validatorn när du får problem. Det hjälper dig att hålla ko
 
 <h3>5.1 Styla me-sidan med CSS</h3>
 
-<p>[UPPGIFT]
+<p><span class="uppg">[UPPGIFT]</span>
 
 <p>Med CSS kan vi som du vet ge sidan färg och form. Vi kan styla HTML-elementen och bestämma 
 var de skall visas på sidan och hur de skall se ut. CSS-koden lägger vi i en separat fil och 
@@ -311,7 +310,7 @@ h1 {
 
 <h3>5.2 Validering av CSS</h3>
 
-<p>[UPPGIFT]
+<p><span class="uppg">[UPPGIFT]</span>
 
 <p>W3C har en validator för CSS. Du når den via följande länk.
 
@@ -326,7 +325,7 @@ Funkar för mig:
 
 <h3>5.3 Länka till valideringsverktyget</h3>
 
-<p>[UPPGIFT]
+<p><span class="uppg">[UPPGIFT]</span>
 
 <p>För att underlätta validering av sidorna så lägger vi till en direktlänk. 
 På samma sätt som vi gjorde med HTML-validatorn. Lägg till följande länk i din footer.
@@ -354,7 +353,7 @@ Dubbelkolla med valideringsverktygen att HTML- och CSS-koden validerar.
 
 <h2>5.4 Unicorn, ett valideringsverktyg “to rule them all”</h2>
 
-<p>[UPPGIFT]
+<p><span class="uppg">[UPPGIFT]</span>
 
 <p>Det finns ett valideringsverktyg som kör både HTML och CSS testerna i en körning. 
 Dessutom kan det köra ytterligare kompletterande tester. 
@@ -399,7 +398,7 @@ Läs mer genom att googla på “html entities”.
 
 <h3>6.1 Gör en header till din me-sida</h3>
 
-<p>[UPPGIFT]
+<p><span class="uppg">[UPPGIFT]</span>
 
 <p>En webbplats innehåller ofta en header med en logo, titel på siten och en navigeringsmeny. 
 Visst vore det trevligt om vår me-sida även innehåll detta?
@@ -508,7 +507,7 @@ innan den lämnar ifrån sig den resulterande HTML-sidan.
 <p>Tekniskt funkar sidan som tidigare. Resultatet i webbläsaren blir precis som tidigare. 
 Det är bara den bakomliggande strukturen av filer på servern som ändrades. 
 
-<p>[UPPGIFT]
+<p><span class="uppg">[UPPGIFT]</span>
 
 <p>Dela upp din sida på ovanstående sätt. Är du klar? Bra, då kan vi fortsätta.
 
@@ -539,7 +538,7 @@ http://php.net/manual/en/function.include.php
 
 <h3>8.1 Testa grundstrukturen, fungerar den?</h3>
 
-<p>[UPPGIFT]
+<p><span class="uppg">[UPPGIFT]</span>
 
 <p>Då gör vi en ny sida genom att kopiera me.php. 
 Döp sidan till report.php. Det är på den sidan som du skall skriva vad du gjort och lärt dig.
@@ -563,7 +562,7 @@ Låt se om det går att hantera med PHP.
 
 <h3>8.2 Variabel i PHP för att byta titel</h3>
 
-<p>[UPPGIFT]
+<p><span class="uppg">[UPPGIFT]</span>
 
 <p>Varje sida skall ha en egen beskrivande titel. Själva titeln sätts i HTML-elementet &lt;title&gt; i 
 header.php. Men, det är ju me-sidan eller redovisningssidan som vet vilken titel det skall vara. 
@@ -596,7 +595,7 @@ http://php.net/manual/en/language.variables.basics.php</a>
 
 <h2>8.3 Felmeddelande i PHP</h2>
 
-<p>[UPPGIFT]
+<p><span class="uppg">[UPPGIFT]</span>
 
 <p>När webbservern processar PHP-koden kan den hitta fel och då skrivs ett felmeddelande ut. 
 Felmeddelande i PHP kan vara av olika typer och ha olika grad av allvarlighet. Beroende på om det är 
@@ -628,7 +627,7 @@ I de fallen kan det vara bra att studera den HTML-kod som genererats.
 
 <h2>8.4 Ta kontroll över felmeddelanden</h2>
 
-<p>[UPPGIFT]
+<p><span class="uppg">[UPPGIFT]</span>
 
 <p>Med PHP-funktionen error_reporting() går att ställa in vilka felmeddelanden som visas, 
 oavsett hur PHP är konfigurerat på servern. Ett bra sätt är att lägga anropet i en egen fil, 
@@ -686,21 +685,21 @@ behöver du ange sluttaggen.
 
 <h3>9.1 Gör klart me-sidan</h3>
 
-<p>[UPPGIFT]
+<p><span class="uppg">[UPPGIFT]</span>
 
 <p>Nu återstår bara att göra klart din me-site och stoppa in lite information. 
 Skriv eller kopiera in en enklare presentationstext om dig själv ca 15 meningar. 
 
 <h3>9.2 Gör klart redovisningssidan</h3>
 
-<p>[UPPGIFT]
+<p><span class="uppg">[UPPGIFT]</span>
 
 <p>Redovisningssidan skriver du senare. Det är det sista du gör i varje kursmoment.
 
 
 <h3>9.3 Länka till source.php</h3>
 
-<p>[UPPGIFT]
+<p><span class="uppg">[UPPGIFT]</span>
 
 <p>Till detta momentet har jag använt PHP-filen source.php för att visa källkodsexemplen. 
 För att det skall vara enkelt att hjälpa till med felsökning så är det viktigt att du har en kopia 
@@ -736,7 +735,7 @@ driftsmiljön.
 
 <h3>10.1 Gör klart redovisningssidan</h3>
 
-<p>[UPPGIFT]
+<p><span class="uppg">[UPPGIFT]</span>
 
 <p>Skriv redovisningen på din me-sida. Skriv ett stycke (ca 15 meningar) om hur momentet funkade. 
 Reflektera över dina svårigheter/problem/lösningar/resultatet, etc.  Vilken/vilka webbläsare du normalt 

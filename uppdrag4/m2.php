@@ -36,9 +36,7 @@ några av dessa tips och tricks. Så många som möjligt.
 bygga fler webbplatser utan att behöva skriva om all kod. Tanken är att bara  kopiera mallen 
 för att skapa en ny webbplats och så vips är man klar! Eller? Peppar, peppar…</strong>
 
-<h2>Dagens agenda</h2>
-
-<p>Detta moment får ta vid där det förra slutade. Vi bygger helt enkelt vidare på me-sidan. 
+<p>Detta moment tar vid där det förra slutade. Vi bygger helt enkelt vidare på me-sidan. 
 Medan vi gör det så försöker vi täcka in så mycket som möjligt av önskningarna från texten ovan. 
 Det blir en bra plan för dagen. Lite som ett smörgåsbord, en kompott av vanliga lösningar och tekniker 
 för att bygga en webbplats.
@@ -54,7 +52,7 @@ för att bygga en webbplats.
 <p>Se till att den innehåller länkar till alla validatorer, manualer och källkoden.
 Dessutom skall den se bra ut.
 
-<p>[UPPGIFT]
+<p><span class="uppg">[UPPGIFT]</span>
 
 <p>Studera min fil <a href="http://localhost/t4ske/uppdrag/uppdrag4/demo/viewsource.php?dir=incl&amp;file=footer.php">
 incl/footer.php</a> och se hur jag har länkat till manualerna. 
@@ -93,7 +91,7 @@ aside<span class="sy0">,</span>figure<span class="sy0">,</span>figcaption<span c
 </pre>
 </div>
 
-<p>[UPPGIFT]
+<p><span class="uppg">[UPPGIFT]</span>
 
 <p>Lägg in stöd för html5-taggar i äldre webbläsare genom att lägga till koden ovan i din stylesheet.
 
@@ -102,7 +100,7 @@ aside<span class="sy0">,</span>figure<span class="sy0">,</span>figcaption<span c
 <p>I min me-sida har jag som sagt använt en del HTML5-element i stället för &lt;div&lt;-element. 
 Öppna min <a href="demo/me.php">me-sida</a> i webbläsaren och studera källkoden (högerklicka och välj “Visa källkod”).
 
-<p>[UPPGIFT]
+<p><span class="uppg">[UPPGIFT]</span>
 
 <p>Uppdatera fritt din egna me-sida med HTML5-element. Använd de som du anser passar.
 
@@ -128,7 +126,7 @@ script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&g
 [endif]--&gt;</span>
 </div>
 
-<p>[UPPGIFT]
+<p><span class="uppg">[UPPGIFT]</span>
 
 <p>Lägg till stöd för IE och HTML5 i din me-sida.
 
@@ -216,7 +214,7 @@ stylesheets,speciellt i utvecklingsfasen.
 
 <p><img src="img/sidstil.jpg">
 
-<p>[UPPGIFT]
+<p><span class="uppg">[UPPGIFT]</span>
 
 <p>Lägg till CSS-konstruktioner i din egna variant av debug och välj att styla de element som bygger upp sidans struktur.
 
@@ -249,13 +247,13 @@ Men är även intresserad av områden som digital design och CMS (främst Joomla
 
 <p>En sådan text kallas byline.
 
-<p>[UPPGIFT]
+<p><span class="uppg">[UPPGIFT]</span>
 
 <p>Skapa en egen byline i egen fil (incl/byline.php). Inklundera och placera den sedan på din sida.
 
 <h3>4.2 Kontrollera</h3>
 
-<p>[UPPGIFT]
+<p><span class="uppg">[UPPGIFT]</span>
 
 <p>Kontrollera nu och uppdatera din me-sida om det behövs så den innehåller följande bitar:
 
@@ -270,6 +268,231 @@ Men är även intresserad av områden som digital design och CMS (främst Joomla
 </ul>
 
 <h2>5. Features till siten</h2>
+
+<p>Det finns ett par saker, features, som är tillagda i min me-sida. Låt oss ta en snabbtitt på några av dem.
+
+<h2>5.1 Favicon</h2>
+
+<p>En favicon är den icon som visas tillsammans med länken till sidan. En del webbläsare visar den även i url-fältet:
+
+<p><img src="img/favicon.jpg">
+
+<p>&nbsp;</p>
+
+<p>En favicon defineras med en &lt;link&gt; i sidans header, inom HTML-elementet &lt;head&gt;. Se kod nedan:
+
+<div class="tip">
+<h4>&nbsp; Kod:</h4>
+	<p>&lt;link rel="shortcut icon" href="img/favicon.ico"&gt;
+</div>
+
+<p>En favicon kan du antingen rita själv, skapa från en bild, eller ladda ner färdig. 
+Det finns resurser på nätet för detta. Prova t.ex.<a href="http://www.favicon.cc/">favicon.cc</a> eller
+<a href="http://www.favicon-generator.org/">favicon-generator</a>. 
+
+<p><span class="uppg">[UPPGIFT]</span>
+
+<p>Lägg till en favicon till din me-sida.
+
+<h2>6.2 Alltid visa scrollbar</h2>
+
+<p>Om en sida är centrerad kan den “flippa” beroende på om scrollbaren visas eller ej. 
+På långa sidor visas scrollbaren men på korta sidor visas den ej. Ett sätt att undvika 
+detta är att alltid visa scrollbaren.
+
+<p>Det du behöver göra är att lägga till nedanståend kod i din stylesheet. 
+Då visas alltid scrollbaren, oavsett hur lång sidan är.
+
+
+<div class="tip">
+<h4>&nbsp; Kod:</h4>
+<p><pre class="html4strict geshi">
+	html { overflow-y: scroll; }
+</pre>
+</div>
+
+<p><span class="uppg">[UPPGIFT]</span>
+
+<p>Lägg till definitionen för att alltid visa scrollbaren i din me-sida.
+
+<h2>5.3 Visa menyval för nuvarande sida</h2>
+
+<p>Min navigationsmeny visar (svengelska: “highlightar”) aktuellt menyval. Se den ljusgrå pilen i bilden nedan 
+eller understrykningen i menyn högst upp på denna sida.
+
+<p><img alt="bild som visar min lösning av uppdraget" src="img/demo.jpg">
+
+<p>Man kan markera 'aktiv' sida på många sätt. Välj ett som du gillar. Bara det blir snyggt!
+
+<p>Även kodmässigt kan man lösa detta på många olika sätt. Här nedan visar jag ett sätt.Lösningen innebär att 
+definera ett id per sida och använda detta id för att styla elementen i stylesheeten, det är en mix av HTML, 
+CSS och PHP.
+
+<p>I HTML-koden för en sida (me.php) kan man se till att ett id-skrivs ut.
+
+<!-- The body id helps with highlighting current menu choice -->
+<body id='me' >
+
+Så här gjorde jag i me.php, jag valde ett id som hette samma sak som sidan.
+
+1) Sätt ett id på HTML-elementet &lt;body&gt; med PHP. Gör det genom att definera  
+id:t för respektive sida meed en variabel, $pageId.
+
+<div class="tip">
+<h4>&nbsp; Kod:</h4>
+<pre class="php geshi"><p><span class="kw2">&lt;?php</span>
+	<span class="re0">$pageId</span> <span class="sy0">=</span> <span class="st0">"me"</span><span class="sy0">;</span>
+<span class="sy1">?&gt;</span></pre>
+</div>
+
+<p>använd sedan detta denna variabel för att skriva ut sidans-id:
+
+<div class="tip">
+<h4>&nbsp; Kod:</h4>
+<pre class="html4strict geshi">
+<p><span class="sc-1">&lt;!-- The body id helps with highlighting current menu choice --&gt;</span>
+<span class="sc2">&lt;body&lt;?php if<span class="br0">(</span>isset<span class="br0">(</span>$pageId<span class="br0">)</span><span class="br0">)</span> echo <span class="st0">" id='$pageId' "</span>; ?&gt;</span>&gt;
+</pre>
+</div>
+
+<p>Skriv även dit samma id för alla menyval. Då blir det enkelt att skriva CSS som markerar det specifika menyvalet.
+
+<p>Så här kan koden för navigationsmenyn se ut:
+
+<div class="tip">
+<h4>&nbsp; Kod:</h4>
+<pre class="html4strict geshi">
+<p><span class="sc-1">&lt;!-- Main navigation menu --&gt;</span>
+<span class="sc2">&lt;nav <span class="kw3">class</span><span class="sy0">=</span><span class="st0">"navmenu"</span>&gt;</span>
+ <span class="sc2">&lt;<a href="http://december.com/html/4/element/a.html"><span class="kw2">a</span></a> <span class="kw3">id</span><span class="sy0">=</span><span class="st0">"me"</span>     <span class="kw3">href</span><span class="sy0">=</span><span class="st0">"me.php"</span>&gt;</span>Me<span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/a.html"><span class="kw2">a</span></a>&gt;</span>
+ <span class="sc2">&lt;<a href="http://december.com/html/4/element/a.html"><span class="kw2">a</span></a> <span class="kw3">id</span><span class="sy0">=</span><span class="st0">"report"</span> <span class="kw3">href</span><span class="sy0">=</span><span class="st0">"report.php"</span>&gt;</span>Redovisning<span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/a.html"><span class="kw2">a</span></a>&gt;</span>
+ <span class="sc2">&lt;<a href="http://december.com/html/4/element/a.html"><span class="kw2">a</span></a> <span class="kw3">id</span><span class="sy0">=</span><span class="st0">"guide"</span>  <span class="kw3">href</span><span class="sy0">=</span><span class="st0">"guide.php"</span>&gt;</span>Guider<span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/a.html"><span class="kw2">a</span></a>&gt;</span>
+ <span class="sc2">&lt;<a href="http://december.com/html/4/element/a.html"><span class="kw2">a</span></a> <span class="kw3">id</span><span class="sy0">=</span><span class="st0">"source"</span> <span class="kw3">href</span><span class="sy0">=</span><span class="st0">"viewsource.php"</span>&gt;</span>Källkod<span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/a.html"><span class="kw2">a</span></a>&gt;</span>
+<span class="sc2">&lt;<span class="sy0">/</span>nav&gt;</span>
+</pre>
+</div>
+
+<p>Då är det bara att skriva CSS-regler som stämmer överens för aktiv sida och aktivt menyval.
+
+<div class="tip">
+<h4>&nbsp; Kod:</h4>
+<pre class="css geshi"><p><span class="coMULTI">
+/* highlight current choice in navigation menu--------------------------------------------------------*/</span>
+body<span class="re0">#me</span> a<span class="re0">#me</span><span class="sy0">,</span>
+body<span class="re0">#report</span> a<span class="re0">#report</span><span class="sy0">,</span>
+body<span class="re0">#guide</span> a<span class="re0">#guide</span><span class="sy0">,</span>
+body<span class="re0">#source</span> a<span class="re0">#source</span> <span class="br0">{</span><span class="kw1">background</span><span class="sy0">:</span><span class="re0">#858585</span><span class="sy0">;</span><span class="kw1">border</span><span class="sy0">:</span><span class="re3">2px</span> <span class="kw2">solid</span> <span class="re0">#656565</span><span class="sy0">;</span><span class="br0">}</span></pre>
+</div>
+
+<p>Denna lösning fungerar bra för mindre webbplatser. Nackdelen är att det är en hårdkodad lösning, 
+för varje nytt menyval så måste man uppdatera koden. När det blir fler sidor så är det bättre att finna en 
+flexiblare lösning som innefattar mer PHP-kodande. Men det överlåter vi till en senare övning.
+
+<p><span class="uppg">[UPPGIFT]</span>
+
+<p>Lägg till stöd i din me-sida så att den visar vilken sida man för tillfället besöker 
+genom att markera detta menyval.
+
+<h2>5.4 Möjlighet att ändra style i enskilda sidor via $pageStyle</h2>
+
+<p>Ibland vill man lägga till style som är specifik för endast en sida. Istället för att ändra i stylesheeten
+ så vill jag inkludera stylen i sidan, inom &lt;style&gt;&lt;/style&gt; taggar. Det finns tillfällen då detta är 
+ behändigt.
+
+<p>Jag har definerat en PHP-variabel för detta syfte, $pageStyle, den fungerar på samma sätt 
+som $pageTitle och $pageId. Om den variableln har ett värde för sidan så skrivs stylingen ut.
+Följande kod-snutt klarar biffen.
+
+<div class="tip">
+<h4>&nbsp; Kod:</h4>
+<pre class="html4strict geshi"><p><span class="sc-1">&lt;!-- Each page can set $pageStyle to create additional style --&gt;</span>
+<span class="sc2">&lt;?php if<span class="br0">(</span>isset<span class="br0">(</span>$pageStyle<span class="br0">)</span><span class="br0">)</span> : ?&gt;</span>
+ <span class="sc2">&lt;<a href="http://december.com/html/4/element/style.html"><span class="kw2">style</span></a> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"text/css"</span>&gt;</span>
+   <span class="sc2">&lt;?php echo $pageStyle; ?&gt;</span>
+ <span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/style.html"><span class="kw2">style</span></a>&gt;</span>
+<span class="sc2">&lt;?php endif; ?&gt;</span></pre>
+</div>
+
+<p>Ovanstående if-sats skriver ut innehållet i $pageStyle om den är definerad och har ett värde skilt från null. 
+Innehållet i variabeln omringas av elementen &lt;style&gt; och &lt;/style&gt;. Värdet på variabeln kan sedan 
+defineras i en sida. Så här kan det se ut:
+
+<div class="tip">
+<h4>&nbsp; Kod:</h4>
+<pre class="php geshi"><p><span class="co1">// Define style thats specific for this page</span>
+<span class="re0">$pageStyle</span> <span class="sy0">=</span> <span class="st_h">'
+figure { 
+ -webkit-border-radius: 10px;
+ -moz-border-radius: 10px;
+ border-radius: 10px;
+ border-color:#5C0A0A;
+ -moz-box-shadow: 10px 10px 5px #8A0F0F;
+ -webkit-box-shadow: 10px 10px 5px #8A0F0F;
+ box-shadow: 10px 10px 5px #8A0F0F;
+}
+'</span><span class="sy0">;</span>
+&nbsp;</pre>
+</div>
+
+<p>Ovanstående kod definerar variabeln och lägger till en style så att alla figure får en ram med runda hörn 
+och en tredimensionell skugga. Observera att variabeln måste få sitt värde innan header.php inkluderas.
+
+<p><span class="uppg">[UPPGIFT]</span>
+
+<p>Lägg till stöd för $pageStyle i din me-sida och använd den för att testa att det fungerar.
+
+<h2>5.5 Inkludera source.php i din webbplats</h2>
+
+<p>Den externa koden som används för att visa källkoden, source.php, är numera integrerad i min me-sida.
+Alltså inte bara länkad från footern. Det är sidan viewsource.php som inkluderar source.php och skriver ut dess 
+innehåll tillsammans med webbplatsens header och footer.
+
+<p>Detta sker genom en kombination av include() och användandet av variabler.
+
+<p>Jag valde att lägga filen source.php i en egen katalog, src/. Min tanke är att lägga externa PHP-komponenter 
+i src-katalogen. Det kommer att bli fler liknande lösningar innan uppdraget är över. Det blir enklare att ha 
+ordning och reda i katalogstrukturen. 
+
+<p><span class="uppg">[UPPGIFT]</span>
+
+<p>Integrera source.php i din me-sida på liknande sätt som jag gjort i 
+<a href="demo/viewsource.php?dir=&amp;file=viewsource.php">min viewsource.php</a>.
+Studera min källkoden om du får problem, se speciellt rad 15-17 och rad 21.
+
+<h2>6. Avslutningsvis</h2>
+
+<p>Detta räcker för tillfället. Det blev en blandad mix av HTML, CSS  och lite PHP.
+
+<p>Se till att du gjort alla uppgifterna. Se också till att du verkligen tar dig tid och 
+funderar igenom allt. Du behöver baskunskaperna i HTML, CSS och PHP (det krävs än mer senare i utbildningen).
+
+<h3>6.1 Reflektera och redovisa</h3>
+
+<p><span class="uppg">[UPPGIFT]</span>
+
+<p>Skriv redovisningen på din me-sida. Skriv ett stycke (ca 15 meningar) om hur momentet funkade. 
+Reflektera över svårigheter, problem, lösningar och resultat. Beskriv hur väl du kan HTML/CSS (nybörjare, erfaren). 
+Me-sidan börjar bli en liten webbplats, vad tycker du om dess struktur av filer och kataloger, 
+känns det okey eller ovant?
+
+<p>&nbsp;</p> 
+<p>&nbsp;</p> 
+<p>&nbsp;</p> 
+<p>&nbsp;</p> 
+<p>&nbsp;</p> 
+<p>&nbsp;</p> 
+
+
+</article>	
+
+
+
+
+
+
+
+
+
 
 
 
