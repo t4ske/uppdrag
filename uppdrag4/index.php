@@ -27,6 +27,7 @@
 		<a href="?sida=m3.php" <?php if(isset($sida) && $sida=="m3.php")echo "class=\"active\""; ?> >Moment 3 </a>
 		<a href="?sida=m4.php" <?php if(isset($sida) && $sida=="m4.php")echo "class=\"active\""; ?> >Moment 4 </a>
 		<a href="?sida=m5.php" <?php if(isset($sida) && $sida=="m5.php")echo "class=\"active\""; ?> >Moment 5 </a>
+		<a href="?sida=m6.php" <?php if(isset($sida) && $sida=="m6.php")echo "class=\"active\""; ?> >Moment 6 </a>
 	</nav>
 
 	

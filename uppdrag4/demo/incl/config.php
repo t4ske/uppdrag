@@ -21,7 +21,7 @@
      require_once 'php/login.php';
      
     /* login variables - not a good solution.. */
-    $userAccount='doe'; 
+    $userAccount='John'; 
     $userPassword=userPassword('doe');
         
 ?>

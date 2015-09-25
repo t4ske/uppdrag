@@ -1,19 +1,6 @@
 <?php
 // ===========================================================================================
 //
-// Origin: http://github.com/mosbth/Utility
-//
-// Filename: login.php
-//
-// Description: Provide a set of functions to enable login & logout on a website.
-//
-// Author: Mikael Roos, mos@bth.se
-//
-// Change history:
-// 
-// 2011-01-26: 
-// First try. Used as example code in htmlphp-kmom03.
-//
 
 
 // -------------------------------------------------------------------------------------------
@@ -83,11 +70,11 @@ function userLoginForm($output=null, $outputClass=null) {
     $output
     <p>
       <label for="input1">Användarkonto:</label><br>
-      <input id="input1" class="text" type="text" name="account">
+      <input id="input1" class="text" type="text" name="account" value="">
     </p>
     <p>
       <label for="input2">Lösenord:</label><br>
-      <input id="input2" class="text" type="password" name="password">
+      <input id="input2" class="text" type="password" name="password" value="">
     </p>
     <p>
       <input type="submit" name="doLogin" value="Login" $disabled>

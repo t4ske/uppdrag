@@ -1,5 +1,5 @@
 <article>
-<h1>Moment1 - Kom igång med HTML, CSS och PHP</h1>
+<h1>Moment1: Bygg en grund med HTML, CSS och PHP</h1>
 
 <p>
 I detta moment skall skall du gå igenom ett par exempel på kodning i HTML, CSS och PHP och använda dessa

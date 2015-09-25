@@ -1,5 +1,5 @@
 <article>
-<h1>Moment2: HTML-element och CSS-konstruktioner</h1>
+<h1>Moment2: Bygg vidare från grunden</h1>
 
 <p>I förra kursmomentet blev resultatet en me-sida, en sida med en beskrivning om mig själv samt 
 en redovisningssida. En webbplats som fortsättningsvis helt enkelt kallas för me-sidan.
