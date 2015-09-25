@@ -21,6 +21,17 @@ article h2{ margin-top: 50px;}
 article h3{ margin-top: 35px;}
 article img{ width: 800px; display: block; margin: 0 auto;}
 
+article iframe{ width: 1200px; height:1000px;display: block; margin: 0 auto; overflow: hidden;
+		-ms-zoom: 0.7;
+        -moz-transform: scale(0.68);
+        -o-transform: scale(0.68);
+        -webkit-transform: scale(0.68);
+        -ms-transform-origin: 50% 0;
+        -o-transform-origin: 50% 0;
+        -webkit-transform-origin: 50% 0;
+        }
+ .wrap{ height: 700px; overflow: hidden;}
+
 .orange{ color: #F06529;}
 .darkorange{ color: #E34C26;}
 
