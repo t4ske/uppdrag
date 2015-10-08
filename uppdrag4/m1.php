@@ -19,7 +19,7 @@ den här utbildningen handlar om. Tanken med övningen är att du skall få till
 I kommande moment tittar vi mer ingående på respektive teknik. Använd tid till både utveckla och till
 att läsa på nätet eller i en bok om saker som du inte förstår. Se till att du får ett bra grepp om det hela!</p>
 
-<p>Totalt beräknas studiemomentet omfatta ca 20 studietimmar. Du kan med fördel göra övningen i delar, 
+<p>Du kan med fördel göra övningen i delar, 
 2-3 timmar per gång kan vara bra. Läs gärna igenom hela momentet innan du börjar.
 
 <h2>Webbresurser</h2>

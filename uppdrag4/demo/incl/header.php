@@ -72,8 +72,10 @@ require_once 'incl/aboveheader.php';
     <br>I Sverige har namnet funnits sedan 1400-talet men inte varit särskilt vanligt under senaste seklet.
     För närvande är det cirka 5500 svenskar som har det som tilltalsnamn.
     <a href="http://sv.wikipedia.org/wiki/Urban_%28namn%29">[källa:wikipedia]</a>';
+
  ?>
 </div>
+
 
   
   <nav class="navmenu clear">
@@ -84,6 +86,7 @@ require_once 'incl/aboveheader.php';
       <a <?php if($pageName=="style") echo 'class="active-page"';?> href="style.php">Stylesheet</a>  
       <a <?php if($pageName=="blokket") echo 'class="active-page"';?> href="blokket.php">Blokket</a>  
       <a <?php if($pageName=="blokket2") echo 'class="active-page"';?> href="blokket2.php">Blokket2</a>   
+      <a <?php if($pageName=="report") echo 'class="active-page"';?> href="report.php">Redovisningar</a>   
   </nav>
   
   

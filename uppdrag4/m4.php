@@ -3,7 +3,7 @@
 
 <h2>1. En stylesheet-väljare med PHP och sessioner</h2>
 
-<h3>8.1 En stylesheet-väljare</h3>
+<h3>1.1 En stylesheet-väljare</h3>
 
 <p>Vi har tidigare gått igenom ett antal konstruktioner som via CSS och stylesheeten 
 kan förändra utseendet på en webbplats. Ibland händer det att man snabbt vill visa och 
@@ -51,7 +51,7 @@ annars behåller jag sidans ursprungliga stylesheet. Följande kod hjälper mig 
 <span class="kw2">&lt;?php</span> <span class="kw1">endif</span><span class="sy0">;</span> <span class="sy1">?&gt;</span></pre>
 </div>
 
-<h3>8.3 Gör multisida med switch-case</h3>
+<h3>1.3 Gör multisida med switch-case</h3>
 
 <p>Jag gör en ny multisida, style.php, där tänker jag skapa formuläret som byter stylesheet.
 

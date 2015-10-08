@@ -54,7 +54,7 @@ Dessutom skall den se bra ut.
 
 <p><span class="uppg">[UPPGIFT]</span>
 
-<p>Studera min fil <a href="http://localhost/t4ske/uppdrag/uppdrag4/demo/viewsource.php?dir=incl&amp;file=footer.php">
+<p>Studera min fil <a href="demo/viewsource.php?dir=incl&amp;file=footer.php">
 incl/footer.php</a> och se hur jag har länkat till manualerna. 
 Jag har även lagt till länkar till en ny validator. Inkludera länkarna i footern på din egna me-sida.
 

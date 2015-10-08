@@ -18,6 +18,10 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
 <body>
 	<nav>
@@ -28,6 +32,7 @@
 		<a href="?sida=m4.php" <?php if(isset($sida) && $sida=="m4.php")echo "class=\"active\""; ?> >Moment 4 </a>
 		<a href="?sida=m5.php" <?php if(isset($sida) && $sida=="m5.php")echo "class=\"active\""; ?> >Moment 5 </a>
 		<a href="?sida=m6.php" <?php if(isset($sida) && $sida=="m6.php")echo "class=\"active\""; ?> >Moment 6 </a>
+		<a href="?sida=20stegsqlite.php" <?php if(isset($sida) && $sida=="20stegsqlite.php")echo "class=\"active\""; ?> >20 steg SQLlite </a>
 	</nav>
 
 	

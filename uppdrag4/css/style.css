@@ -73,3 +73,33 @@ article iframe{ width: 1200px; height:1000px;display: block; margin: 0 auto; ove
  .sql.geshi .ln-xtra,.sql.geshi li.ln-xtra,.sql.geshi div.ln-xtra{background-color:#ffc;}
  .sql.geshi span.xtra{display:block;}
 
+
+
+ /* Style for displaying code */
+#20steg blockquote.code {font-family:monospace;white-space:pre;background:#F2F2F2;
+#20steg margin-left:0;margin-right:0;padding-left:0.5em;
+#20steg border:1px solid #999;overflow:auto;
+}
+
+/* Display a intabbed textarea */
+#20steg blockquote.example {margin-left: 1em;padding-left: 1em;border-left:  1px solid #999;} 
+
+/* Display a intabbed textarea */
+#20steg p.example {font-style: italic;}
+
+/* Display author and date at top of article */
+#20steg p.byline {font-size:smaller;color:#666;font-style:italic;}
+
+#20steg h2{padding-top:1em;}
+#20steg h3{background:#656565;color:#fff;padding:0.2em 0.5em;margin-top:1.5em;border-top:2px solid #858585;}
+section h3 a{float:left; width: 16px; height: 16px; background: #eee; border:1px solid #999; 
+	text-decoration: none; text-align: center; font-size: 11px; margin-right: 5px; color:#333; border-radius: 3px;}
+section h3 a:hover{ background: #333; color:white;}
+
+#20steg hgroup h3{margin-top:1em;}
+
+#20steg div.example{overflow:auto;border-top:2px dotted #999;border-bottom:2px dotted #999;}
+
+#20steg .nav-section a {font-size:x-small;text-decoration:none;}
+
+

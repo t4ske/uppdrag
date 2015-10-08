@@ -24,7 +24,7 @@ med en mix av HTML, CSS och PHP. Det kan bli klurigt att felsöka om något går
 Men det kan vara bra att ha, utifall att…
 </div>
 
-<p>Totalt omfattar momentet ca 20 studietimmar. Du kan med fördel göra övningen i delar, 3-4 timmar 
+<p>Du kan med fördel göra övningen i delar, 3-4 timmar 
 per gång kan vara bra. Det är en god idé att snabbt läsa igenom dokumentet innan du påbörjar själva uppdraget.
 
 <p>Är du redo? Bra! -Då kör vi igång!
@@ -119,7 +119,7 @@ Testa sedan sidan genom att anropa den på följande vis:
 
 <p>kmom03_get.php?id=html20<br>
 kmom03_get.php?id=html20&amp;debug<br>
-kmom03_get.php?id=html20&amp;debug&amp;p=kmom03-get
+kmom03_get.php?id=html20&amp;debug&amp;p=kmom03_get
 
 <p>Kontrollera att du kan se parametrarna som skickades till sidan. <strong>Det är för övrigt en vanlig
 test som man nästan alltid gör innan man jobbar vidare.</strong>
@@ -140,7 +140,7 @@ Funktionen heter htmlentities() och kan användas på följande sätt.
 <pre class="php geshi"><p><span class="kw2">&lt;?php</span> <span class="kw1">echo</span> <a href="http://www.php.net/htmlentities"><span class="kw3">htmlentities</span></a><span class="br0">(</span><span class="re0">$_SERVER</span><span class="br0">[</span><span class="st_h">'QUERY_STRING'</span><span class="br0">]</span><span class="br0">)</span><span class="sy0">;</span> <span class="sy1">?&gt;</span></pre>
 </div>
 
-<p>Då är min kmom03_get2.php är uppdaterad och validerar. 
+<p>Då är min kmom03_get.php är uppdaterad och validerar. 
 
 <p><span class="uppg">[UPPGIFT]</span>
 
@@ -295,7 +295,9 @@ följande PHP-funktioner.
 <li>strip_tags()</li>
 </ul>
 
-<p>Titta på bilden nedan, klarar du av att koda ihop det utan att tjuvkika på min kod?
+<p>Titta i bilden/ramen (iframen) nedan, klarar du av att koda ihop en sådan sida utan att tjuvkika på min kod?
+
+<p><div class="wrap"><iframe src="demo/test.php?p=kmom03_validate" scrolling="no"></iframe></div>
 
 <div class="tip">
 <h4>&nbsp; Tips:</h4>
@@ -338,19 +340,19 @@ Om det kör ihop sig på riktigt så kan du alltid testa att kopiera delar av k�
 <h4>&nbsp; Tips:</h4>
 
 <p>Det behövs en speciallösning för att få exemplet med get-formuläret att hamna på en sida med länken 
-<code>?p=kmom03-getform</code>.</p>
+<code>?p=kmom03_getform</code>.</p>
 
 <pre class="html4strict geshi"><p><span class="sc2">&lt;<a href="http://december.com/html/4/element/form.html"><span class="kw2">form</span></a> <span class="kw3">method</span><span class="sy0">=</span><span class="st0">"get"</span> <span class="kw3">action</span><span class="sy0">=</span><span class="st0">"?"</span>&gt;</span>
-  <span class="sc2">&lt;<a href="http://december.com/html/4/element/input.html"><span class="kw2">input</span></a> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"hidden"</span> <span class="kw3">name</span><span class="sy0">=</span><span class="st0">"p"</span> <span class="kw3">value</span><span class="sy0">=</span><span class="st0">"kmom03-getform"</span>&gt;</span></pre>
+  <span class="sc2">&lt;<a href="http://december.com/html/4/element/input.html"><span class="kw2">input</span></a> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"hidden"</span> <span class="kw3">name</span><span class="sy0">=</span><span class="st0">"p"</span> <span class="kw3">value</span><span class="sy0">=</span><span class="st0">"kmom03_getform"</span>&gt;</span></pre>
 
 <p>Ett input-fält av typen hidden hjälper till. 
 
 <p>I <code>kmom03_postform.php</code> och <code>kmom03_validate.php</code> 
 räcker det att ändra action till den nya sidans länk.</p>
 
-<pre class="html4strict geshi"><p><span class="sc2">&lt;<a href="http://december.com/html/4/element/form.html"><span class="kw2">form</span></a> <span class="kw3">method</span><span class="sy0">=</span><span class="st0">"post"</span> <span class="kw3">action</span><span class="sy0">=</span><span class="st0">"?p=kmom03-postform"</span>&gt;</span></pre>
+<pre class="html4strict geshi"><p><span class="sc2">&lt;<a href="http://december.com/html/4/element/form.html"><span class="kw2">form</span></a> <span class="kw3">method</span><span class="sy0">=</span><span class="st0">"post"</span> <span class="kw3">action</span><span class="sy0">=</span><span class="st0">"?p=kmom03_postform"</span>&gt;</span></pre>
 
-<p>(respektive <code>action="?p=kmom03-validate"</code>)</p>
+<p>(respektive <code>action="?p=kmom03_validate"</code>)</p>
 
 <p>Som du ser så skriver jag endast urlens del från <code>?</code>-tecknet. Den andra delen fylls på av webbläsaren och kommer vara samma som nuvarande url.</p>
 
@@ -495,7 +497,7 @@ Titta på koden, du känner igen den från manualen.
 
 <p>Använd funktionen destroySession() och gör ett testfall som förstör sessionen.
 <a href="demo/test.php?p=kmom03_sessiondestroy">Titta hur jag gjorde</a> 
-och <a href="emo/viewsource.php?dir=tester&amp;file=kmom03_sessiondestroy.php">se var jag valde att 
+och <a href="demo/viewsource.php?dir=tester&amp;file=kmom03_sessiondestroy.php">se var jag valde att 
 anropa funktionen</a>.
 
 <p>Fint, då kan vi starta och förstöra en session, då kan det vara dags att studera
