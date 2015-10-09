@@ -1,0 +1,16 @@
+Skapa databas
+Skapa tabell
+Lägg in data
+Radera 
+Ändra tabellstruktur 
+Uppdaterar poster
+Välj ut data
+Sortera
+Namnge kolumner 
+Inbyggda funktioner
+Strängar
+Datum och tid
+Vyer
+Främmande nycklar
+Hämta data från flera tabeller
+Underfrågor 
